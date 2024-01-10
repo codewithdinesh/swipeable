@@ -4,7 +4,7 @@ import Hero from './Hero';
 
 const Main = () => {
     return (
-        <div className=' flex p-5 justify-items-center items-center items-center'>
+        <div className='flex flex-col md:flex-row p-5 justify-items-center items-center items-center '>
 
             <Section />
             <Hero />

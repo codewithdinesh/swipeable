@@ -7,7 +7,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Slider from 'react-slick';
 
-const ReviewContainer = () => {
+const ReviewContainer = ({ reviews }) => {
 
     const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -16,20 +16,6 @@ const ReviewContainer = () => {
         onSwipedRight: () => handleSwipe('right'),
     });
 
-    let reviews = [
-        {
-            text: "I learned the real importance of communication skill, and how to use that skill in a better way. I have learned that this life is just not meant to live for one self only but whenever we get a chance to beautify someone else's world we should move towards that.",
-            name: "Sakshi",
-        },
-        {
-            text: "I learned the real importance of communication skill, and how to use that skill in a better way. I have learned that this life is just not meant to live for one self only but whenever we get a chance to beautify someone else's world we should move towards that.",
-            name: "Dinesh",
-        },
-        {
-            text: "I learned the real importance of communication skill, and how to use that skill in a better way. I have learned that this life is just not meant to live for one self only but whenever we get a chance to beautify someone else's world we should move towards that.",
-            name: "Omkar",
-        }
-    ]
 
     const handleSwipe = (direction) => {
         const nextIndex =
