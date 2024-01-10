@@ -34,7 +34,7 @@ const Hero = () => {
 
 
     return (
-        <div className='p-5 flex-1 justify-items-center'>
+        <div className='p-5  justify-items-center justify-end'>
 
             <h2>Using Custom Slider </h2>
 

@@ -4,7 +4,7 @@ import Hero from './Hero';
 
 const Main = () => {
     return (
-        <div className='flex flex-col md:flex-row p-1 justify-items-center  '>
+        <div className='flex flex-col md:flex-row p-1 justify-between '>
 
             <Section />
             <Hero />
