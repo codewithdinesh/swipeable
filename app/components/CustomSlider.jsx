@@ -24,7 +24,7 @@ const CustomSlider = ({ reviews }) => {
     };
 
     return (
-        <div {...handlers} className='max-w-sm overflow-hidden cursor-pointer select-none'>
+        <div {...handlers} className='max-w-md overflow-hidden cursor-pointer select-none bg-[#fcfbd4] py-4 rounded-lg shadow-md' >
 
 
             <div className='flex transition-transform duration-300 ease-in-out' style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
@@ -39,7 +39,7 @@ const CustomSlider = ({ reviews }) => {
                 {reviews.map((_, index) => (
                     <button
                         key={index}
-                        className={`w-4 h-4 rounded-full inline-block mx-1 ${index === currentIndex ? "bg-slate-500" : "bg-slate-300"}`}
+                        className={`w-4 h-4 rounded-full inline-block mx-1 ${index === currentIndex ? "bg-orange-500" : "bg-orange-200"}`}
                         onClick={() => setCurrentIndex(index)}
                     ></button>
                 ))}
